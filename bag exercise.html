@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bag Exercise</title>
+    <link rel="stylesheet" href="bag exericse.css">
+</head>
+<body>
+    <button class="bag-button" onclick="cartQuantity = cartQuantity + 1; 
+    document.querySelector('#cart-summary').innerText
+     = `Your bag has ${cartQuantity} items`;">
+     Add to Bag</button>
+        <button class="wish-button" onclick="cartQuantity = cartQuantity - 1; 
+    document.querySelector('#cart-summary').innerText
+     = `Your bag has ${cartQuantity} items`;"
+        >Move to Wishlist</button> 
+<button class="bag-button" onclick="cartQuantity = cartQuantity + 2; 
+    document.querySelector('#cart-summary').innerText
+     = `Your bag has ${cartQuantity} items`;">
+    Add 1+1 Sale item</button>
+<h1 id="cart-summary"></h1>
+<script>
+        let cartQuantity = 0;
+        document.querySelector('#cart-summary').innerText = `Your bag has ${cartQuantity} items`;
+    </script>
+</body>
+</html>

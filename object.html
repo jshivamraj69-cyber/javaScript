@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>object</title>
+</head>
+<body>
+   <script>
+       const person = {
+           name: 'Riya',
+           age: 20,
+           city: 'Mumbai',
+           greet() {
+               return `Hello, my name is ${this.name} and I live in ${this.city}.`;
+           }
+       };
+
+       // Read object properties
+       console.log(person);
+       console.log('Name:', person.name);
+       console.log('Age:', person.age);
+       console.log('Greeting:', person.greet());
+
+       // Update a property and add a new property
+       person.age = 21;
+       person.country = 'India';
+
+       document.body.innerHTML = `
+           <h1>Object Example</h1>
+           <p><strong>Name:</strong> ${person.name}</p>
+           <p><strong>Age:</strong> ${person.age}</p>
+           <p><strong>City:</strong> ${person.city}</p>
+           <p><strong>Country:</strong> ${person.country}</p>
+           <p><strong>Greeting:</strong> ${person.greet()}</p>
+       `;
+   </script> 
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Function</title>
+</head>
+<body>
+    <script>
+       function formatAge(age = 18, prefix = 'Your age is') {
+           return `${prefix} ${age}`;
+       }
+
+       function getPersonInfo(name, age = 18) {
+           return `${name} is ${age} years old.`;
+       }
+
+       console.log(formatAge());
+       console.log(formatAge(21));
+       console.log(formatAge(76, 'Age now is'));
+       console.log(getPersonInfo('Riya'));
+       console.log(getPersonInfo('Aakash', 25));
+       console.log(getPersonInfo('Meera', 7));
+    </script>
+</body>
+</html>
