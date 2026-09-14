@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Practise set 10</title>
+    <style>
+        .btn-subscribe{
+            height: 20px;
+            width: 80px;
+            background-color: rgb(147, 5, 5);
+            color: white;
+            border: none;
+            border-radius: 4px;
+        }
+        .js-size-double {
+            font-size: 30px;
+            height: 40px;
+            width: 160px;
+        }
+    </style>
+</head>
+<body>
+    <button class="btn-subscribe" type="button">Subscribe</button>
+    <script>
+        function doubleTheSize(){
+            let buttonElement = document.querySelector('.btn-subscribe');
+            buttonElement.classList.add('js-size-double');
+        }
+
+        document.querySelector('.btn-subscribe').addEventListener('click', doubleTheSize);
+
+        let numbers = [1, 2, 3, 4, 5];
+        numbers.forEach(number => console.log(number));
+
+        //let multiply = (num1, num2) => num1 * num;
+        //console.log(multiply(4,5));
+       
+       // let printGreeting = () => console.log('Namaste');
+        //let runtwice = inputFunction =>{
+          //  inputFunction();
+            //inputFunction();
+        //};
+        //runtwice(printGreeting);
+    </script>
+</body>
+</html>
